@@ -18,5 +18,11 @@ func main() {
 
 	if choice == 1 {
 		fmt.Println("Your balance is", accountBalance)
+	} else if choice == 2 {
+		var depositAmount float64
+		fmt.Print("Your deposit amount is ")
+		fmt.Scan(&depositAmount)
+		accountBalance += depositAmount
+		fmt.Println("Your updated balance is", accountBalance)
 	}
 }
